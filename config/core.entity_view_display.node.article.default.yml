@@ -30,7 +30,7 @@ content:
     label: hidden
   field_iframe:
     weight: 101
-    label: above
+    label: hidden
     settings:
       url: ''
       title: ''
