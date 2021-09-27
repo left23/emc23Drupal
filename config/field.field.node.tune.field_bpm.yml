@@ -1,0 +1,29 @@
+uuid: b3044cfc-abc8-4909-8e60-9cb2c15d2312
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bpm
+    - node.type.tune
+    - taxonomy.vocabulary.bpm
+id: node.tune.field_bpm
+field_name: field_bpm
+entity_type: node
+bundle: tune
+label: BPM
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      bpm: bpm
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

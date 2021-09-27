@@ -1,0 +1,46 @@
+uuid: d14a6451-0c5f-4a4c-b81f-94b1f96c1f66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mixtapes.body
+    - field.field.node.mixtapes.field_series
+    - field.field.node.mixtapes.field_tune
+    - node.type.mixtapes
+  module:
+    - text
+    - user
+id: node.mixtapes.default
+targetEntityType: node
+bundle: mixtapes
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_series:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_tune:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

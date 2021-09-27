@@ -1,0 +1,23 @@
+uuid: 813cd038-d787-424c-a86f-9ed8f39e0aa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tune
+  module:
+    - text
+id: node.tune.body
+field_name: body
+entity_type: node
+bundle: tune
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

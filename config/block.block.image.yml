@@ -1,0 +1,36 @@
+uuid: 919ac27b-97f4-404b-be4c-c2ed0f77fa45
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:36774ea0-8e50-42e4-b361-948538e192b5'
+  module:
+    - block_content
+    - context
+  theme:
+    - emc
+id: image
+theme: emc
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'block_content:36774ea0-8e50-42e4-b361-948538e192b5'
+settings:
+  id: 'block_content:36774ea0-8e50-42e4-b361-948538e192b5'
+  label: Image
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: "/wiki\r\n/techbotgithubio"
+    negate: null
+    context_mapping: {  }
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+    context_mapping: {  }

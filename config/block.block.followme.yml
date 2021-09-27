@@ -1,0 +1,42 @@
+uuid: daae8292-c5ea-45ec-90be-5a2eb5d6d7b8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:560e4e3c-37b4-4e7c-85a0-819dbd16c900'
+  module:
+    - block_content
+    - context
+    - system
+  theme:
+    - emc
+id: followme
+theme: emc
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'block_content:560e4e3c-37b4-4e7c-85a0-819dbd16c900'
+settings:
+  id: 'block_content:560e4e3c-37b4-4e7c-85a0-819dbd16c900'
+  label: 'Follow Me'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: "/wiki\r\n/techbotgithubio"
+    negate: null
+    context_mapping: {  }
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: www.emc23.com/wiki
+    negate: true
+    context_mapping: {  }

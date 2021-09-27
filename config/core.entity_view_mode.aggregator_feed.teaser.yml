@@ -1,0 +1,10 @@
+uuid: b601c1a4-fa90-4666-ae4f-7f2c142b25fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - aggregator
+id: aggregator_feed.teaser
+label: Teaser
+targetEntityType: aggregator_feed
+cache: true
