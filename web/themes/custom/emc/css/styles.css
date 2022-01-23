@@ -27,6 +27,15 @@ ol {
     list-style-type: none;
 }
 
+blockquote {
+  background-color: #111;
+  border: 1px solid #222;
+  border-left: 8px solid #222;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
 h1 {
   font-family: 'Droid Sans', sans-serif;
 }
@@ -291,6 +300,7 @@ article.node--view-mode-full .node__content {
 }
 
 /* date and author */
+article > h2 + .node__meta,
 article > header + .node__meta  {
     margin-top: -1rem;
     background-color: #111;
@@ -324,6 +334,7 @@ article > header > .node__meta span {
 .links.field__items li {
     display: inline-block;
     padding: 0 0.5rem 0 0;
+    margin-bottom: 0.5rem;
 }
 
 .links.field__items li a {

@@ -113,7 +113,6 @@ html {
         vertical-align: top;
     }
 
-
     #block-emc-branding {
         padding: 1rem 0 2rem 1rem;
     }
@@ -217,3 +216,16 @@ html {
         margin: 0 1em 1em 0;
     }
 }
+
+/* Full page layout */
+.page-node-100 main,
+.page-node-100 #main,
+.page-node-101 main,
+.page-node-101 #main,
+.page-node-107 main,
+.page-node-107 #main,
+.page-node-108 main,
+.page-node-108 #main {
+  max-width: 1600px;
+}
+
