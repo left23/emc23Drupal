@@ -91,19 +91,19 @@
   {% endif %}
   {{ title_suffix }}
 
+
+  {% if display_submitted %}
+    <footer class="node__meta">
+      {{ author_picture }}
+      <div{{ author_attributes.addClass('node__submitted') }}>
+        {% trans %}By {{ author_name }} | {{ date }}{% endtrans %}
+        {{ metadata }}
+      </div>
+    </footer>
+  {% endif %}
+
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content }}
   </div>
 
-
-    {% if display_submitted %}
-      <footer class="node__meta">
-          {{ author_picture }}
-        <div{{ author_attributes.addClass('node__submitted') }}>
-            {% trans %}By {{ author_name }} | {{ date }}{% endtrans %}
-            {{ metadata }}
-        </div>
-      </footer>
-    {% endif %}
-  
 </article>
