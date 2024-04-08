@@ -1,0 +1,22 @@
+uuid: e1235913-fd2d-481f-a06f-ebcb58cfe57a
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - emc
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: emc_powered
+theme: emc
+region: sidebar_second
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

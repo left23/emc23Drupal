@@ -1,0 +1,8 @@
+uuid: 2f322181-1aba-4f91-9682-7440f4ac6417
+langcode: en
+status: true
+dependencies: {  }
+id: tags
+label: Network
+description: ''
+locked: false

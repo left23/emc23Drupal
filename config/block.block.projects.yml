@@ -1,0 +1,25 @@
+uuid: 2e5211f4-8b31-40f0-9b65-550aba2d95a2
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.projects
+  module:
+    - system
+  theme:
+    - emc
+id: projects
+theme: emc
+region: sidebar_first
+weight: -4
+provider: null
+plugin: 'system_menu_block:projects'
+settings:
+  id: 'system_menu_block:projects'
+  label: Projects
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

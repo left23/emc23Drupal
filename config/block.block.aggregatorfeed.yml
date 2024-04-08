@@ -1,0 +1,22 @@
+uuid: 63d86d21-2abc-42b9-ad0a-ba2179d4265d
+langcode: en
+status: false
+dependencies:
+  module:
+    - aggregator
+  theme:
+    - emc
+id: aggregatorfeed
+theme: emc
+region: sidebar_first
+weight: -5
+provider: null
+plugin: aggregator_feed_block
+settings:
+  id: aggregator_feed_block
+  label: Github
+  label_display: visible
+  provider: aggregator
+  block_count: 3
+  feed: '1'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 4601d527-cf60-4c2f-8db5-2599fc9af0e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: stream
+label: Stream
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  313fd120-107c-4cf1-9e16-a5738ceb9425:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 313fd120-107c-4cf1-9e16-a5738ceb9425
+    context_mapping:
+      node: node
+    bundles:
+      stream: stream
+selection_logic: and
+weight: -5
+relationships: {  }

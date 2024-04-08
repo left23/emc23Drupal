@@ -1,0 +1,34 @@
+uuid: 1dcf0cf8-ade2-48c8-a277-37eea5386aa0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+label: linkitProfile
+id: linkitprofile
+description: articles
+matchers:
+  95dc8dec-d739-4d7c-8eda-75aae849f885:
+    id: 'entity:node'
+    uuid: 95dc8dec-d739-4d7c-8eda-75aae849f885
+    settings:
+      metadata: '[node:title]/[node:author]'
+      bundles:
+        article: article
+        mixtapes: mixtapes
+        page: page
+      group_by_bundle: true
+      substitution_type: canonical
+      include_unpublished: true
+    weight: 0
+  3257ae3c-0a63-425b-aa8f-00079e713064:
+    id: 'entity:taxonomy_term'
+    uuid: 3257ae3c-0a63-425b-aa8f-00079e713064
+    settings:
+      metadata: tagresults
+      bundles:
+        tags: tags
+      group_by_bundle: true
+      substitution_type: canonical
+    weight: 0

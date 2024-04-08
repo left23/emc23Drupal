@@ -1,0 +1,22 @@
+uuid: 03baa9bf-f0ef-47d3-b5ff-29f3a54b6471
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: mixtape
+label: Mixtape
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  14d0e21a-1c1c-4631-8cc2-d1c11e68b4e5:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 14d0e21a-1c1c-4631-8cc2-d1c11e68b4e5
+    context_mapping:
+      node: node
+    bundles:
+      mixtapes: mixtapes
+selection_logic: and
+weight: -5
+relationships: {  }

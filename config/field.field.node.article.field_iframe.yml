@@ -1,0 +1,42 @@
+uuid: 41963581-28d1-4baa-a0ba-800eb8400f63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iframe
+    - node.type.article
+  module:
+    - iframe
+id: node.article.field_iframe
+field_name: field_iframe
+entity_type: node
+bundle: article
+label: iframe
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    url: 'https://emc23.com'
+    title: test
+    class: ''
+    frameborder: '0'
+    scrolling: auto
+    transparency: '0'
+    allowfullscreen: '0'
+    tokensupport: '0'
+    width: '500'
+    height: '500'
+    expose_class: false
+default_value_callback: ''
+settings:
+  title: null
+  class: ''
+  frameborder: '1'
+  scrolling: 'yes'
+  transparency: '0'
+  allowfullscreen: '1'
+  tokensupport: '2'
+  width: null
+  height: null
+field_type: iframe

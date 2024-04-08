@@ -1,0 +1,22 @@
+uuid: 5e05e5e5-c920-4201-a1dc-499bb175b5d9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - emc
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: emc_local_tasks
+theme: emc
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,44 @@
+uuid: 01ecad47-c474-4d60-a60f-5668ba3434b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.aggregator_feed.teaser
+  module:
+    - aggregator
+_core:
+  default_config_hash: ORtH44CMbYMb3_0zumUPwVhPmaLBiImWpZa_hO3qmhU
+id: aggregator_feed.aggregator_feed.teaser
+targetEntityType: aggregator_feed
+bundle: aggregator_feed
+mode: teaser
+content:
+  checked:
+    type: timestamp_ago
+    label: inline
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  feed_icon:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  image:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  items:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  description: true
+  link: true
+  more_link: true

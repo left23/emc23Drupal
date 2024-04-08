@@ -1,0 +1,36 @@
+uuid: a26b1cd7-21c6-4a3d-9683-2617c7366c11
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tags
+  module:
+    - context
+    - system
+  theme:
+    - emc
+id: tags
+theme: emc
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'system_menu_block:tags'
+settings:
+  id: 'system_menu_block:tags'
+  label: Network
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    context_mapping: {  }
+    pages: "/wiki\r\n/techbotgithubio\r\n/coming-up-the-satellite-of-love"
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: 'https://www.emc23.com/wiki'

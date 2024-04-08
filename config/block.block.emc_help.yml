@@ -1,0 +1,22 @@
+uuid: 07d6b1a1-2a66-46e8-b740-572be73db09c
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - emc
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: emc_help
+theme: emc
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

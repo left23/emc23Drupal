@@ -1,0 +1,34 @@
+uuid: 1dfe93b7-9d23-4623-bb56-3502c5273aa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tune.body
+    - field.field.node.tune.field_bpm
+    - field.field.node.tune.field_cover_image
+    - node.type.tune
+  module:
+    - text
+    - user
+id: node.tune.teaser
+targetEntityType: node
+bundle: tune
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_bpm: true
+  field_cover_image: true

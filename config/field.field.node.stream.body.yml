@@ -1,0 +1,23 @@
+uuid: 37206579-d58c-4d29-8397-3d28a01dace4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.stream
+  module:
+    - text
+id: node.stream.body
+field_name: body
+entity_type: node
+bundle: stream
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

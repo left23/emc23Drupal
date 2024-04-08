@@ -1,0 +1,28 @@
+uuid: 7b390445-26d6-4170-9f84-968a0035ea96
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - contact
+    - filter
+    - linkit
+    - media
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'administer linkit profiles'
+  - 'search content'
+  - 'use text format basic_html'
+  - 'view media'

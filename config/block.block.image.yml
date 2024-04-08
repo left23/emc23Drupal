@@ -1,0 +1,31 @@
+uuid: 919ac27b-97f4-404b-be4c-c2ed0f77fa45
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:36774ea0-8e50-42e4-b361-948538e192b5'
+  module:
+    - block_content
+    - context
+  theme:
+    - emc
+id: image
+theme: emc
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'block_content:36774ea0-8e50-42e4-b361-948538e192b5'
+settings:
+  id: 'block_content:36774ea0-8e50-42e4-b361-948538e192b5'
+  label: Image
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    context_mapping: {  }
+    pages: "/wiki\r\n/techbotgithubio\r\n/coming-up-the-satellite-of-love"

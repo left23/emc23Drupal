@@ -1,0 +1,54 @@
+uuid: 954e107f-766c-4c3d-b56a-26e3ef2ab8ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+    - system
+    - twitter_embed
+  theme:
+    - emc
+id: twittertimeline
+theme: emc
+region: sidebar_first
+weight: -10
+provider: null
+plugin: twitter_embed_timeline
+settings:
+  id: twitter_embed_timeline
+  label: Twitter
+  label_display: '0'
+  provider: twitter_embed
+  username: emc23dotcom
+  type: profile
+  type_value: ''
+  display_style: timeline
+  theme: dark
+  chrome:
+    noheader: 0
+    nofooter: 0
+    noborders: 0
+    transparent: 0
+    noscrollbar: 0
+  width: '0'
+  height: '600'
+  link_color: '#2b7bb9'
+  border_color: '#000000'
+  tweet_limit: '5'
+  show_replies: 0
+  aria_polite: polite
+  language: ''
+  hide_username: false
+  hide_followers_count: false
+  size: null
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    context_mapping: {  }
+    pages: "/wiki\r\n/techbotgithubio\r\n"
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/wiki\r\n/coming-up-the-satellite-of-love"

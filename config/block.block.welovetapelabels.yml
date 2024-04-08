@@ -1,0 +1,25 @@
+uuid: 76f3604b-eaf8-4bdf-8382-b423c3e715bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.we-love-tape-labels
+  module:
+    - system
+  theme:
+    - emc
+id: welovetapelabels
+theme: emc
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'system_menu_block:we-love-tape-labels'
+settings:
+  id: 'system_menu_block:we-love-tape-labels'
+  label: 'We Love Tape Labels'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

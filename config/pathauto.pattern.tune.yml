@@ -1,0 +1,22 @@
+uuid: bc028a4f-3013-42ea-b0be-c34663635aaf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: tune
+label: Tune
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  65dc53a4-488b-4a8f-9c77-06aa268e71b7:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 65dc53a4-488b-4a8f-9c77-06aa268e71b7
+    context_mapping:
+      node: node
+    bundles:
+      tune: tune
+selection_logic: and
+weight: -5
+relationships: {  }

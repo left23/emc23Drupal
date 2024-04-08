@@ -1,0 +1,8 @@
+uuid: f1f8ee1f-b6b8-47f2-a736-d93317a4966c
+langcode: en
+status: true
+dependencies: {  }
+id: we-love-tape-labels
+label: 'We Love Tape Labels'
+description: ''
+locked: false

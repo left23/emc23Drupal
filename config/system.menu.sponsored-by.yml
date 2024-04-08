@@ -1,0 +1,8 @@
+uuid: c29add05-228e-4a87-9460-93b1712d22af
+langcode: en
+status: true
+dependencies: {  }
+id: sponsored-by
+label: 'Sponsored By'
+description: ''
+locked: false
